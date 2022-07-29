@@ -1,0 +1,43 @@
+#content {
+    margin: 25px;
+}
+
+.collapsible {
+    margin-bottom: 5px;
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.dark .collapsible {
+    background-color: #002e4d;
+    color: gainsboro;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.active {
+    background-color: #c8ebe6;
+}
+
+.collapsible:hover {
+    background-color: lightcyan;
+}
+
+.dark .active {
+    background-color: #00497a;
+}
+
+.dark .collapsible:hover {
+    background-color: #007acc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}

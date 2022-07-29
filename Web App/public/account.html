@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Account</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+
+</head>
+
+<body id="body">
+    <nav role="navigation">
+        <div id="menuToggle">
+            <ul id="menu">
+                <a id="a1" href="download.html">
+                    <li>Download</li>
+                </a>
+                <a id="a2" href="visualization.html">
+                    <li>Visualizations</li>
+                </a>
+                <a id="a3" href="settings.html">
+                    <li>Settings</li>
+                </a>
+                <!--<a id="a4" href="help.html">
+                    <li>Help</li>
+                </a>-->
+                <a id="a5" href="account.html">
+                    <li>Account</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div id="content">
+        <br><br><br><br><br>
+        <input class="button" type="button" value="Log Out" onclick="logout()">
+        <br>
+        <h5>Change Password:</h5>
+        <input id="oldpassword" type="password" placeholder="Old password">
+        <br><br>
+        <input id="newpassword" type="password" placeholder="New password">
+        <br><br>
+        <input class="button" type="button" value="Confirm" onclick="changePwButton()">
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
+</body>
+
+</html>

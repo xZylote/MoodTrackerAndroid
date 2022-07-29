@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+#oldpassword {
+    height: 40px;
+    width: 50%;
+    text-align: center;
+}
+
+#newpassword {
+    height: 40px;
+    width: 50%;
+    text-align: center;
+}

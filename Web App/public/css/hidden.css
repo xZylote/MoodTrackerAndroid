@@ -1,0 +1,78 @@
+.line1 {
+    fill: none;
+    stroke: blue;
+    stroke-width: 15px;
+}
+
+.line2 {
+    fill: none;
+    stroke: red;
+    stroke-width: 15px;
+}
+
+.axis {
+    font-size: 50px;
+    font-weight: bold;
+    stroke-width: 4px;
+}
+
+.checkbox {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+label {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.date {
+    width: 30%;
+    height: 100px;
+    font-size: 40px;
+}
+
+#visButton {
+    width: 25%;
+    height: 104px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+body {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.compname {
+    text-anchor: middle;
+    stroke: black;
+    stroke-width: 1px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.compcircles {
+    opacity: 80%;
+}
+
+.compcircles:hover {
+    opacity: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.alignleft {
+    text-anchor: start;
+    transform: translate(0, -17px) rotate(90deg);
+    ;
+}

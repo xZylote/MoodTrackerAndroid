@@ -1,0 +1,108 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+#content {
+    margin: 50px;
+}
+
+.lsting li {
+    line-height: 40px;
+    width: 446px;
+    padding: 5px 20px;
+    overflow: hidden;
+    height: 0;
+    margin-left: -40px;
+}
+
+.lsting li.show {
+    height: 40px;
+    font-size: 20px;
+}
+
+.lsting li:nth-child(odd) {
+    background: LightBlue;
+}
+
+.dark .lsting li:nth-child(odd) {
+    background: #002E4D;
+    border-radius: 5px;
+}
+
+.lsting li:nth-child(even) {
+    background: LightCyan;
+}
+
+.dark .lsting li:nth-child(even) {
+    background: #00497A;
+    border-radius: 5px;
+}
+
+#notiTime,
+#notiTime2 {
+    margin: 0 0 0 5px;
+    border-radius: 0;
+    width: 200px;
+    padding: 10px 10px 12px 10px;
+    font-size: 16px;
+}
+
+#notiTime3 {
+    margin: 0 0 0 5px;
+    border-radius: 0;
+    width: 200px;
+    padding: 9px 10px 14px 10px;
+    font-size: 20px;
+}
+
+.animate {
+    perspective: 200px;
+}
+
+.animate li {
+    opacity: 0;
+    transform: rotateX(45deg);
+    transition: all .4s cubic-bezier(.5, -0.5, .5, 1.5);
+}
+
+.animate li.show {
+    opacity: 1;
+    transform: none;
+    transition: all .4s cubic-bezier(.5, -0.5, .5, 1.5);
+}
+
+.animate li.hide {
+    opacity: 0;
+    transform: none;
+    transition: all .3s cubic-bezier(.5, -0.5, .5, 1.5);
+    padding: 0 5% 0 5%;
+}
+
+.delete {
+    position: absolute;
+    left: 435px;
+    padding: 0 18px 0 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+#sync {
+    width: 200px;
+    height: 50px;
+}
+
+.dark #sync {
+    background-color: #999999;
+    border-radius: 5px;
+}
+
+.dark #consentInput {
+    background-color: #999999;
+    border-radius: 5px;
+}

@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There are no right or wrong answers" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="1 (never)" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="3" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="4 (always)" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If someone I’m talking with begins to cry, I get teary-eyed" />
+
+            <RadioGroup
+                android:id="@+id/qGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q1-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q1-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q1-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q1-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Being with a happy person picks me up when I’m feeling down." />
+
+            <RadioGroup
+                android:id="@+id/qGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q2-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q2-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q2-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q2-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When someone smiles warmly at me, I smile back and feel warm inside." />
+
+            <RadioGroup
+                android:id="@+id/qGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q3-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q3-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q3-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q3-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I get filled with sorrow when people talk about the death of their loved ones." />
+
+            <RadioGroup
+                android:id="@+id/qGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q4-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q4-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q4-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q4-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I clench my jaws and my shoulders get tight when I see the angry faces on the news." />
+
+            <RadioGroup
+                android:id="@+id/qGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q5-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q5-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q5-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q5-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When I look into the eyes of the one I love, my mind is filled with thoughts of romance." />
+
+            <RadioGroup
+                android:id="@+id/qGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q6-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q6-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q6-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q6-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It irritates me to be around angry people." />
+
+            <RadioGroup
+                android:id="@+id/qGroup7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q7-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q7-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q7-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q7-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watching the fearful faces of victims on the news makes me try to imagine how they might be feeling." />
+
+            <RadioGroup
+                android:id="@+id/qGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q8-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q8-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q8-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q8-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I melt when the one I love holds me close." />
+
+            <RadioGroup
+                android:id="@+id/qGroup9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q9-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q9-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q9-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q9-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I tense when overhearing an angry quarrel." />
+
+            <RadioGroup
+                android:id="@+id/qGroup10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q10-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q10-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q10-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q10-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Being around happy people fills my mind with happy thoughts." />
+
+            <RadioGroup
+                android:id="@+id/qGroup11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q11-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q11-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q11-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q11-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I sense my body responding when the one I love touches me." />
+
+            <RadioGroup
+                android:id="@+id/qGroup12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q12-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q12-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q12-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q12-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I notice myself getting tense when I’m around people who are stressed out." />
+
+            <RadioGroup
+                android:id="@+id/qGroup13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q13-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q13-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q13-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q13-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I cry at sad movies." />
+
+            <RadioGroup
+                android:id="@+id/qGroup14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q14-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q14-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q14-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q14-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listening to the shrill screams of a terrified child in a dentist’s waiting room makes me feel nervous." />
+
+            <RadioGroup
+                android:id="@+id/qGroup15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q15-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q15-2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q15-3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/q15-4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="cancel"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="nextToNicknameButton"
+                    android:text="Next" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

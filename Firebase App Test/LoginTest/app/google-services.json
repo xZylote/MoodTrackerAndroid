@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1060747338361",
+    "firebase_url": "https://angrynerds-dac9e.firebaseio.com",
+    "project_id": "angrynerds-dac9e",
+    "storage_bucket": "angrynerds-dac9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060747338361:android:de82e7ef24ce011e812aa8",
+        "android_client_info": {
+          "package_name": "com.example.logintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060747338361-331bm4mnugukl9abqv5f9lajst84sdd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4mLcVg87lrGBNuKpmJXiWyWJKqmN1KK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060747338361-331bm4mnugukl9abqv5f9lajst84sdd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.logintest">
+
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".AddCompanionActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="angrynerds-dac9e.web.app"
+                    android:pathPattern="/invite"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RecordMoodActivity" />
+        <activity android:name=".RecordStressActivity" />
+        <activity android:name=".RecordCompanionsActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".Questionnaire2Activity" />
+        <activity android:name=".Questionnaire3Activity" />
+        <activity android:name=".SignUpNicknameActivity" />
+        <activity android:name=".VisualizeDayActivity" />
+        <activity android:name=".RecordSpecialSituationsActivity" />
+        <activity android:name=".CompanionsActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoggedInActivity"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".DayAlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Authenticate</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body id="body">
+    Empty cache first.
+    <input id="pw" type="password" placeholder="Password">
+    <input type="button" value="Login" onclick="login()">
+    <h4 style="color: red;" id="error"></h4>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

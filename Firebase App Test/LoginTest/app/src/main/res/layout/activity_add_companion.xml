@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCompanionActivity">
+
+    <EditText
+        android:id="@+id/enterCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="User code"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="My user code:\nLoading..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inviteByEmail" />
+
+    <Button
+        android:id="@+id/addByCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relationship" />
+
+    <Button
+        android:id="@+id/inviteByEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="invite"
+        android:text="Invite friend via Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addByCode" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:onClick="back"
+        android:text="Return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetCode"
+        android:text="Reset code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCode" />
+
+    <RadioGroup
+        android:id="@+id/relationship"
+        android:layout_width="214dp"
+        android:layout_height="162dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32">
+
+        <RadioButton
+            android:id="@+id/relCouple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Couple" />
+
+        <RadioButton
+            android:id="@+id/relFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friend" />
+
+        <RadioButton
+            android:id="@+id/relFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family" />
+
+        <RadioButton
+            android:id="@+id/relRoommate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roommate" />
+
+        <RadioButton
+            android:id="@+id/relOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relationship"
+        app:layout_constraintStart_toStartOf="@+id/enterCode"
+        app:layout_constraintTop_toBottomOf="@+id/nickname" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nickname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterCode" />
+</androidx.constraintlayout.widget.ConstraintLayout>
